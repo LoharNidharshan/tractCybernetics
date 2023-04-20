@@ -1,0 +1,510 @@
+/* login */
+
+
+
+
+/* deshboard */
+
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+/* Style the tab */
+#main{
+  background-color: #5f9ea0;
+  height: 5rem;
+
+}
+/* upload image */
+
+.profile-user-img {
+border-radius: 100%;
+  width: 80px;
+  box-shadow: 0px 2px 4px 0px #5f9ea0;
+}
+
+.avatar-upload {
+  position: relative;
+  max-width: 205px;
+  margin: auto;
+  margin-bottom: 30px;
+}
+.avatar-upload .avatar-edit {
+  position: absolute;
+  right: 70px;
+  z-index: 1;
+  top: 10px;
+}
+.avatar-upload .avatar-edit input {
+  display: none;
+}
+.avatar-upload .avatar-edit input + label {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  margin-bottom: 0;
+  border-radius: 100%;
+  background: transparent;
+  border: 1px solid transparent;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  font-weight: normal;
+  transition: all 0.2s ease-in-out;
+}
+.avatar-upload .avatar-edit input + label:hover {
+  background:transparent;
+  border-color: transparent;
+}
+.avatar-upload .avatar-edit input + label:after {
+
+  font-family: "FontAwesome";
+  color: #337AB7;
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+  line-height: 34px;
+  margin: auto;
+}
+
+/* ****************************** */
+#main img{
+  width :80px;
+  height: 60px;
+  padding-top: 1%;
+ padding-left: 2%;
+  float: left;
+  
+
+ 
+}
+.sidenav {
+  height: 350px;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 70px;
+  right: 0;
+  color: azure;
+  background-color: #5f9ea0;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+
+/* Style the buttons inside the tab */
+.sidenav button {
+  display: block;
+  background-color: inherit;
+  color:azure;
+  font-weight: bold;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.sidenav button:hover {
+  
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.sidenav button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  /* background-color: white; */
+  /* border: 1px solid #ccc; */
+  width: 100%;
+  border-left: none;
+  height: 300px;
+}
+/* searchbutton */
+
+#main_search{
+width: 70%;
+  float: left;
+  padding:1% 5% ;
+  
+}
+
+input[type=text] {
+ width: 150px;
+ height: 39px;
+ box-sizing: border-box;
+ border: 2px solid #ccc;
+ border-radius: 4px;
+ font-size: 16px;
+ background-color: white;
+ /* background-image: url('searchicon.png'); */
+ background-position: 10px 10px; 
+ background-repeat: no-repeat;
+ padding: 15px 20px 12px 40px;
+ -webkit-transition: width 0.4s ease-in-out;
+ transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+ width: 40%;
+}
+.abc {
+ color: black;
+ font-weight: bold;
+ float: left;
+ padding: 2px;
+       margin-left: -2%;
+       margin-top: -1% ;
+       position: absolute;
+       z-index: 2;
+ /* border: 2px solid #ccc; */
+}
+
+
+/* map_css */
+
+
+
+
+#map {
+  position: absolute;
+  left: 0%;
+  width: 100%;
+  /* height: 50%; */
+  border-style: solid;
+  border-color: black;
+  border-width: thin;
+  z-index: 0;
+
+}
+
+/* pdf */
+#download-btn {
+  width: 30px;
+  height: 40px;
+  left: 32%;
+  top: 1.5%;
+  box-sizing: content-box;
+  z-index: 20;
+  position: absolute;
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+  border: 1px solid #bbb;
+}
+
+
+/* Opacity */
+
+.slides {
+  position: absolute;
+  top: 10%;
+  left: 15%;
+
+  font-weight: bold;
+
+
+}
+
+#slide {
+  position: absolute;
+  top: 10.5%;
+  left: 35%;
+
+
+}
+
+
+/* taluka */
+
+.slides1 {
+  position: absolute;
+  top: 13%;
+  left: 15%;
+
+  font-weight: bold;
+
+
+}
+
+#slide1 {
+  position: absolute;
+  top: 13%;
+
+  left: 35%;
+
+
+
+}
+
+/* village */
+
+.slides2 {
+  position: absolute;
+  top: 16%;
+  left: 15%;
+
+  font-weight: bold;
+
+
+}
+
+#slide2 {
+  position: absolute;
+  top: 16%;
+
+  left: 35%;
+
+
+
+}
+
+
+/* revenue */
+
+.slides3 {
+  position: absolute;
+  top: 19%;
+
+  left: 15%;
+  font-weight: bold;
+
+
+}
+
+#slide3 {
+  position: absolute;
+  top: 19%;
+  left: 35%;
+
+
+
+
+}
+
+/* ********************************************** */
+
+
+/* media Query */
+
+@media screen and (min-width: 480px) {
+
+  #map {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* pdf */
+  #download-btn {
+    width: 30px;
+    height: 40px;
+    left: 18%;
+    top: 1.5%;
+    box-sizing: content-box;
+    z-index: 20;
+    position: absolute;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid #bbb;
+  }
+
+  /* searchbutton */
+
+  #boxx {
+    width: 500px;
+    left: 2%;
+    top: -2.5%;
+
+
+  }
+
+  .openBtn1 {
+
+    left: 10%;
+
+  }
+
+  .overlay1 .closebtn1 {
+
+    top: 17px;
+    right: 13%;
+    font-size: 30px;
+  }
+
+  .overlay1 input[type=text] {
+
+    font-size: 15px;
+
+  }
+
+  /* Opacity */
+
+  .slides {
+
+    left: 10%;
+
+  }
+
+  #slide {
+    left: 20%;
+
+  }
+
+
+  /* taluka */
+
+  .slides1 {
+
+    left: 10%;
+
+
+  }
+
+  #slide1 {
+
+    left: 20%;
+
+  }
+
+  /* village */
+
+  .slides2 {
+
+    left: 10%;
+
+  }
+
+  #slide2 {
+
+    left: 20%;
+
+  }
+
+
+  /* revenue */
+
+  .slides3 {
+
+    left: 10%;
+
+  }
+
+  #slide3 {
+
+    left: 20%;
+
+  }
+}
+
+
+@media screen and (min-width: 1024px) {
+
+  /* pdf */
+  #download-btn {
+    width: 30px;
+    height: 40px;
+    left: 10%;
+    top: 1.5%;
+    box-sizing: content-box;
+    z-index: 20;
+    position: absolute;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid #bbb;
+  }
+
+  /* searchbutton */
+
+
+
+
+
+    /* Opacity */
+
+  .slides {
+
+    left: 5%;
+
+  }
+
+  #slide {
+    left: 10%;
+
+  }
+
+
+  /* taluka */
+
+  .slides1 {
+    left: 5%;
+
+
+
+  }
+
+  #slide1 {
+    left: 10%;
+
+
+  }
+
+  /* village */
+
+  .slides2 {
+
+    left: 5%;
+
+  }
+
+  #slide2 {
+
+    left: 10%;
+  }
+
+
+  /* revenue */
+
+  .slides3 {
+    left: 5%;
+
+
+  }
+
+  #slide3 {
+
+    left: 10%;
+
+  }
+}
